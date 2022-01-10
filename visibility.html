@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>visibility vs display</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid indigo;
+      }
+      #box-1 {
+        background-color: khaki;
+      }
+      #box-2 {
+        /* visibility: hidden; element will not show in web site but take space on the page */
+        visibility: hidden;
+        /*display: none;element will not show in web site and does not take space on the page */
+        /* display: none; */
+        background-color: mediumseagreen;
+      }
+      #box-3 {
+        background-color: salmon;
+      }
+      #box-4 {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>visibility hidden vs display none</h1>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+  </body>
+</html>
